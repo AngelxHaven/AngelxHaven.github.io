@@ -1,6 +1,6 @@
 name: Issue Report
 description: Create a new issue with relevant details
-title: "[Issue]: "
+title: "Title"
 labels: []
 assignees: []
 projects: []
@@ -26,52 +26,7 @@ body:
     attributes:
       label: "✅ Acceptance Criteria"
       description: "What must be true for this issue to be considered done?"
-      placeholder: |
-        - [ ] Example acceptance criterion 1
-        - [ ] Example acceptance criterion 2
     validations:
       required: true
 
-  - type: dropdown
-    id: assignees
-    attributes:
-      label: "👤 Assignees"
-      description: "Assign yourself or others to this issue."
-      multiple: true
-      options:
-        - "Unassigned"
-        - "Your GitHub Username Here"
 
-  - type: dropdown
-    id: labels
-    attributes:
-      label: "🏷️ Labels"
-      description: "Select at least one label for this issue."
-      multiple: true
-      options:
-        - "bug"
-        - "enhancement"
-        - "help wanted"
-        - "documentation"
-        - "question"
-
-  - type: dropdown
-    id: milestone
-    attributes:
-      label: "📅 Milestone"
-      description: "Select a milestone for this issue."
-      multiple: false
-      options:
-        - "v1.0"
-        - "v2.0"
-        - "Future Release"
-
-  - type: dropdown
-    id: project
-    attributes:
-      label: "📂 Project"
-      description: "Link this issue to a GitHub project."
-      multiple: false
-      options:
-        - "Project Board 1"
-        - "Project Board 2"
