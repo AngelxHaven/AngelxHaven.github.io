@@ -1,0 +1,33 @@
+:root{
+    --text-color: #071212;
+    --link-color: #ffffff;
+    --background-color: #dce3e3;
+    font-size: 17px;
+}
+
+@font-face{
+    src: url(fonts/LEMONMILK-Light.otf);
+    font-family: lemonl;
+}
+
+@font-face{
+    src: url(fonts/LEMONMILK-Regular.otf);
+    font-family: lemon;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: lemon;
+}
+
+a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
