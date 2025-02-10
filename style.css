@@ -58,3 +58,8 @@ nav .right a{
     font-weight: 600;
     margin: 0 0.625rem;
 }
+
+nav .right a:hover{
+    color: var(--link-color);
+    transition: color 0.5s ease-in-out;
+}
