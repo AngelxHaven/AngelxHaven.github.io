@@ -6,13 +6,13 @@
 }
 
 @font-face{
-    src: url(fonts/LEMONMILK-Light.otf);
-    font-family: lemonl;
+    src: url(fonts/LEMONMILK-Regular.otf);
+    font-family: lemon;
 }
 
 @font-face{
-    src: url(fonts/LEMONMILK-Regular.otf);
-    font-family: lemon;
+    src: url(fonts/LEMONMILK-Light.otf);
+    font-family: lemonlight;
 }
 
 *{
@@ -62,4 +62,64 @@ nav .right a{
 nav .right a:hover{
     color: var(--link-color);
     transition: color 0.5s ease-in-out;
+}
+
+section:nth-of-type(odd) {
+    background-color: #ffffff; 
+}
+
+section:nth-of-type(even) {
+    background-color: #406565;
+}
+
+#about {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8rem 2rem;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+/* Flex container for side-by-side layout */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 2rem; 
+    width: 80%; 
+    max-width: 1500px; 
+    text-align: left; 
+}
+
+/* Profile picture styling */
+.pfp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Circular image */
+.pfp .avatar {
+    width: 22rem;
+    height: 22rem;
+    border-radius: 70%;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Keeps the "this is me btw" text below the image */
+.pfp h4 {
+    margin-top: 10px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Bio takes remaining space */
+.bio {
+    flex: 1; 
+    max-width: 700px; 
+    text-align: center;
 }
