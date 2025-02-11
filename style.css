@@ -6,13 +6,13 @@
 }
 
 @font-face{
-    src: url(fonts/LEMONMILK-Light.otf);
-    font-family: lemonl;
+    src: url(fonts/LEMONMILK-Regular.otf);
+    font-family: lemon;
 }
 
 @font-face{
-    src: url(fonts/LEMONMILK-Regular.otf);
-    font-family: lemon;
+    src: url(fonts/LEMONMILK-Light.otf);
+    font-family: lemonlight;
 }
 
 *{
@@ -64,38 +64,62 @@ nav .right a:hover{
     transition: color 0.5s ease-in-out;
 }
 
+section:nth-of-type(odd) {
+    background-color: #ffffff; 
+}
+
+section:nth-of-type(even) {
+    background-color: #406565;
+}
+
 #about {
     min-height: 50vh;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 8rem 2rem;
-    display: flex;
     align-items: center;
     text-align: center;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
-#about h2{
-    margin-bottom: 0.5rem;
-    font-size: 1.8rem;
-    font-weight: 700;
+/* Flex container for side-by-side layout */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 2rem; 
+    width: 80%; 
+    max-width: 1500px; 
+    text-align: left; 
 }
 
-#about .pfp {
-    width: 20rem;
-    height: 20rem;
-    overflow: hidden;
-    margin-top: 1rem;
-    margin-bottom: 10px;
-    border-radius: 50%;
+/* Profile picture styling */
+.pfp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Circular image */
+.pfp .avatar {
+    width: 22rem;
+    height: 22rem;
+    border-radius: 70%;
+    object-fit: cover;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-#about .pfp .avatar{
-    width: 20rem;
+/* Keeps the "this is me btw" text below the image */
+.pfp h4 {
+    margin-top: 10px;
+    text-align: center;
+    white-space: nowrap;
 }
 
-#about h4{
+/* Bio takes remaining space */
+.bio {
+    flex: 1; 
+    max-width: 700px; 
     text-align: center;
-    margin-bottom: 10px;
 }
