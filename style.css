@@ -10,11 +10,6 @@
     font-family: lemon;
 }
 
-@font-face{
-    src: url(fonts/LEMONMILK-Light.otf);
-    font-family: lemonlight;
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -70,6 +65,7 @@ section:nth-of-type(odd) {
 
 section:nth-of-type(even) {
     background-color: #406565;
+    color: #ffffff;
 }
 
 #about {
@@ -83,8 +79,7 @@ section:nth-of-type(even) {
     gap: 1rem;
 }
 
-/* Flex container for side-by-side layout */
-.about-content {
+#about .about-content {
     display: flex;
     align-items: center;
     justify-content: flex-start; 
@@ -94,15 +89,13 @@ section:nth-of-type(even) {
     text-align: left; 
 }
 
-/* Profile picture styling */
-.pfp {
+#about .pfp {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Circular image */
-.pfp .avatar {
+#about .pfp .avatar {
     width: 22rem;
     height: 22rem;
     border-radius: 70%;
@@ -110,16 +103,114 @@ section:nth-of-type(even) {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Keeps the "this is me btw" text below the image */
-.pfp h4 {
+#about .pfp h4 {
     margin-top: 10px;
     text-align: center;
     white-space: nowrap;
 }
 
-/* Bio takes remaining space */
-.bio {
-    flex: 1; 
+#about .bio {
+    flex: 1;
+    margin-top: 15px; 
     max-width: 700px; 
     text-align: center;
+}
+
+#projects {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#projects h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-underline-offset: 10px;
+}
+
+#projects h3 {
+    font-size: 1.75rem; 
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#projects h4{
+    font-size: 1.25rem; 
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+#projects .projects-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; 
+    align-items: center; 
+}
+
+#projects .design-project {
+    display: flex;
+    justify-content: center; 
+    gap: 2rem; 
+    width: 100%;
+    text-align: center;
+}
+
+#projects .link-box {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 350px; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+    min-height: 350px; 
+    flex-shrink: 0;
+    align-items: center;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+#projects .box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid gray;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background-color: white;
+    min-height: 500px;
+    text-align: center;
+}
+
+#projects .project-img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+}
+
+#projects .project-desc {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    margin-top: 1rem;
+    overflow: hidden; 
+    text-align: center;
+}
+
+#projects .project-desc h4 {
+    font-size: 1.2rem; 
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+#projects .link-box:hover .box-content {
+    background-color: #bdf0f2;
 }
