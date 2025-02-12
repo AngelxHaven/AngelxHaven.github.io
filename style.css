@@ -214,3 +214,76 @@ section:nth-of-type(even) {
 #projects .link-box:hover .box-content {
     background-color: #bdf0f2;
 }
+
+#interests {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#interests .interest-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#interests h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-underline-offset: 10px;
+}
+
+#interests h4{
+    font-size: 1.25rem; 
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+#interest .desc{
+    font-size: 1rem; 
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+#interests .link-box {
+    text-decoration: none;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 350px; 
+    flex: 1 1 350px;
+    display: flex;
+    box-sizing: border-box;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+#interests .box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #406565;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background-color: white;
+    min-height: 450px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#interests .interest-img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+}
