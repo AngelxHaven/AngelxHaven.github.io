@@ -2,7 +2,7 @@
     --text-color: #071212;
     --link-color: #ffffff;
     --background-color: #dce3e3;
-    font-size: 16px; /* base font size */
+    font-size: 20px; /* base font size */
 }
 
 @font-face{
@@ -214,7 +214,7 @@ section:nth-of-type(even) {
 #projects .link-box:hover .box-content {
     background-color: #bde8ea;
     color:#000000;
-    transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 #interests {
