@@ -176,11 +176,12 @@ section:nth-of-type(even) {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid gray;
+    border: 2px solid #bde8ea;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: white;
+    background-color: #4c8688;
+    color: white;
     min-height: 450px;
     text-align: center;
 }
@@ -211,7 +212,8 @@ section:nth-of-type(even) {
 }
 
 #projects .link-box:hover .box-content {
-    background-color: #bdf0f2;
+    background-color: #bde8ea;
+    color:#000000;
     transition: background-color 0.5s ease-in-out;
 }
 
@@ -291,6 +293,32 @@ section:nth-of-type(even) {
 #interests .link-box:hover .box-content {
     background-color: #4c8688;
     color:#ffffff;
-    transition: color 0.5s ease-in-out;
-    transition: background-color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+#contact h1{
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-underline-offset: 10px;
+}
+
+#contact .contact-links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+#contact i{
+    font-size: 3rem;
+    color: #ffffff;
+    margin: 1rem 0;
+    transition: transform 0.5s ease, color 0.5s ease;
+}
+
+#contact i:hover{
+    color: #bde8ea;
+    transform: scale(1.1);
 }
