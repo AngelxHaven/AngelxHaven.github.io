@@ -164,7 +164,7 @@ section:nth-of-type(even) {
     box-sizing: border-box;
     display: flex;
     flex-direction: column; 
-    min-height: 350px; 
+    min-height: 250px; 
     flex-shrink: 0;
     align-items: center;
     margin-bottom: 2rem;
@@ -182,7 +182,7 @@ section:nth-of-type(even) {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     background-color: white;
-    min-height: 500px;
+    min-height: 450px;
     text-align: center;
 }
 
@@ -206,9 +206,9 @@ section:nth-of-type(even) {
 }
 
 #projects .project-desc h4 {
-    font-size: 1.2rem; 
-    font-weight: 700;
-    margin-bottom: 0.5rem;
+    font-size: 1rem; 
+    font-weight: 500;
+    margin-bottom: 0.25rem;
 }
 
 #projects .link-box:hover .box-content {
