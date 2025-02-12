@@ -180,7 +180,6 @@ section:nth-of-type(even) {
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
     background-color: white;
     min-height: 450px;
     text-align: center;
@@ -213,6 +212,7 @@ section:nth-of-type(even) {
 
 #projects .link-box:hover .box-content {
     background-color: #bdf0f2;
+    transition: background-color 0.5s ease-in-out;
 }
 
 #interests {
@@ -272,7 +272,7 @@ section:nth-of-type(even) {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    background-color: white;
+    background-color: #bde8ea;
     min-height: 450px;
     width: 100%;
     height: 100%;
@@ -286,4 +286,11 @@ section:nth-of-type(even) {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 1rem;
+}
+
+#interests .link-box:hover .box-content {
+    background-color: #4c8688;
+    color:#ffffff;
+    transition: color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
 }
