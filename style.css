@@ -1,6 +1,4 @@
 :root{
-    --text-color: #071212;
-    --link-color: #ffffff;
     --background-color: #dce3e3;
     font-size: 20px; /* base font size */
 }
@@ -23,7 +21,7 @@
 }
 
 a{
-    color: var(--text-color);
+    color: #071212;
     text-decoration: none;
 }
 
@@ -47,13 +45,13 @@ nav{
 }
 
 nav .left a{
-    color: var(--text-color);
+    color: #071212;
     font-size: 2rem;
     font-weight: 600;
 }
 
 nav .right a{
-    color: var(--text-color);
+    color: #071212;
     font-size: 1.25rem;
     font-weight: 600;
     margin: 0 0.625rem;
@@ -96,7 +94,7 @@ section:nth-of-type(even) {
     gap: 2rem; 
     width: 80%; 
     max-width: 1500px; 
-    text-align: left; 
+    text-align: center; 
 }
 
 #about .pfp {
@@ -267,7 +265,6 @@ section:nth-of-type(even) {
     width: 100%;
     max-width: 350px; 
     flex: 1 1 350px;
-    display: flex;
     box-sizing: border-box;
     display: flex;
     flex-shrink: 0;
@@ -353,7 +350,6 @@ footer {
     align-items: center;
     width: 100%;
     min-height: 50px;
-    z-index: 1000;
     font-weight: 700;
 }
 
