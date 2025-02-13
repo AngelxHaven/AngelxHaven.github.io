@@ -353,13 +353,13 @@ footer {
     font-weight: 700;
 }
 
-footer .navi{
+footer .footer-nav{
     display: flex;
     gap: 1rem;
     justify-content: space-around;
 }
 
-footer .navi a:hover{
+footer .footer-nav a:hover{
     color: #4c8688;
     transition: color 0.5s ease-in-out;
 }
