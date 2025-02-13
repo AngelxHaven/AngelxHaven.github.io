@@ -48,13 +48,13 @@ nav{
 
 nav .left a{
     color: var(--text-color);
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
 nav .right a{
     color: var(--text-color);
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 600;
     margin: 0 0.625rem;
 }
@@ -84,6 +84,11 @@ section:nth-of-type(even) {
     gap: 1rem;
 }
 
+#about h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 #about .about-content {
     display: flex;
     align-items: center;
@@ -109,6 +114,7 @@ section:nth-of-type(even) {
 }
 
 #about .pfp h4 {
+    font-size: 1.25rem;
     margin-top: 10px;
     text-align: center;
     white-space: nowrap;
@@ -117,7 +123,8 @@ section:nth-of-type(even) {
 #about .bio {
     flex: 1;
     margin-top: 15px; 
-    max-width: 700px; 
+    max-width: 700px;
+    font-size: 1.15rem; 
     text-align: center;
 }
 
@@ -127,22 +134,16 @@ section:nth-of-type(even) {
 }
 
 #projects h1 {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 2rem;
     text-underline-offset: 10px;
 }
 
 #projects h3 {
-    font-size: 1.75rem; 
-    font-weight: 700;
+    font-size: 2rem; 
+    font-weight: 500;
     margin-bottom: 1rem;
-}
-
-#projects h4{
-    font-size: 1.25rem; 
-    font-weight: 700;
-    margin-bottom: 0.5rem;
 }
 
 #projects .projects-content {
@@ -187,8 +188,15 @@ section:nth-of-type(even) {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-color: #4c8688;
     color: white;
-    min-height: 450px;
+    min-height: 500px;
     text-align: center;
+    font-size: 1.15rem;
+}
+
+#projects .box-content h4 {
+    font-size: 1.5rem; 
+    font-weight: 600;
+    margin-bottom: 0.2rem;
 }
 
 #projects .project-img {
@@ -214,6 +222,11 @@ section:nth-of-type(even) {
     font-size: 1rem; 
     font-weight: 500;
     margin-bottom: 0.25rem;
+}
+
+#projects .coding-project h2{
+    font-weight: 100;
+    font-size: 1.5rem;
 }
 
 #projects .link-box:hover .box-content {
@@ -243,14 +256,8 @@ section:nth-of-type(even) {
 }
 
 #interests h4{
-    font-size: 1.25rem; 
+    font-size: 1.5rem; 
     font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
-#interest .desc{
-    font-size: 1rem; 
-    font-weight: 500;
     margin-bottom: 0.5rem;
 }
 
@@ -286,6 +293,11 @@ section:nth-of-type(even) {
     text-align: center;
 }
 
+#interests .desc p{
+    font-size: 1.15rem; 
+    margin-bottom: 0.5rem;
+}
+
 #interests .interest-img {
     width: 100%;
     height: 200px; 
@@ -308,7 +320,7 @@ section:nth-of-type(even) {
 
 #contact h1{
     font-size: 2.25rem;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 2rem;
     text-align: center;
     text-underline-offset: 10px;
